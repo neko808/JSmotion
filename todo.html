@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    
+
+
+    
+
+    
+
+</head>
+<body>
+
+    
+
+<div class="container">
+    <div class="space1"></div>
+    <p>Haiii!</p>
+    <p>Every</p>
+
+    <!-- <ul id="todo-list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+    </ul>
+
+    <h2 class="todo-nr"></h2> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script>
+    // compile the template
+    let template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+    // execute the compiled template and print the output to the console
+    console.log(template({ doesWhat: "rocks!" }));
+    </script>
+    
+
+
+
+
+
+    <script id="template" type="text/x-handlebars-template">
+        <h1>{{title}}</h1>
+        <ol>
+            {{#each list}}
+                <li>{{this.name}}</li>
+            {{/each}}
+        </ol>
+        <p>{{footer}}</p>
+
+
+        <button onclick="fill_template()">fill template</button>       
+    </script>
+
+
+
+    
+
+</div>
+
+
+
+<script src="js/app.js"></script>
+
+
+
+</body>
+</html>
+

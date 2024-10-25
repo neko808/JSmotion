@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+	<style>
+		table{
+			font-family: 'Roboto', sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+<section>
+
+	<!-- <article class="mycard">
+		<div class="container">
+			<div class="myCollapse" class="accordion">
+				<div class="card">
+					<a class="card-header collapsed" href="#">
+						<h3>Do you post analytics and performance metrics for influencers and their followers ?</h3>
+						<img class="fa-chevron-up" src="img/arrow_down.svg" alt="arrow down">
+					</a>
+				</div>
+			</div>
+		</div>
+	</article> -->
+
+		<article class="mycard">
+		<div class="container">
+			<div class="myCollapse" class="accordion">
+				<div class="card">
+					<a class="card-header" id="cardHeader" href="#">
+						<h3>Do you post analytics and performance metrics for influencers and their followers ?</h3>
+						<img class="fa-chevron-up" src="img/arrow_down.svg" alt="arrow down">
+					</a>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<div class="wrapper">
+		<h1>Hi</h1>
+		<div class="grid">
+			<div class="box box1">
+				<h3>Box1</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem temporibus nemo ratione, consequatur adipisci aspernatur, ipsum ipsam id libero eveniet labore quod deserunt.</p>
+			</div>
+			<div class="box box2">
+
+			</div>
+			<div class="box box3">
+			</div>
+
+			<div class="box box4">
+				<img class="foto" src="img/face1200.jpg" alt="foto">
+			</div>
+			<a class="contacto" href="first.html">
+				<div class="text" >
+						<h3>Contacto</h3>
+				</div>
+			</a>
+			
+		</div>
+	</div>
+
+	
+
+
+
+	<article class="article">
+			
+			<div class="badges"><br><br>
+				<p class="text">
+					<span>*</span>
+					<span class="firstLine">Milkshake</span><br>
+					<span class="secondLine">20% off</span><br>
+					<span class="thirdLine">This Month</span><br>
+				</p>
+			</div>
+		
+			<div class="barra">
+				<div class="flex">
+					<table class="table">
+						<tr>
+							<th>Items</th>
+							<th>Quantity</th>
+							<th>Price</th>
+						</tr>
+						<tr>
+							<td class="item">
+								<h3>Chicken Burger</h3>
+							</td>
+							<td class="quantity">
+								<div class="number-input">
+									<button onclick="minus(this,'Chicken Burger')"></button>
+									<input class="quantity" min="0" name="qty" value="0" type="number">
+									<button onclick="plus(this,'Chicken Burger')" class="plus"></button>
+								</div>
+							</td>
+							<td>10.00 $</td>
+						</tr>
+						<tr>
+							<td class="item">
+								<h3>Chicken Wings</h3>
+							</td>
+							<td class="quantity">
+								<div class="number-input">
+									<button onclick="minus(this,'Chicken Wings')"></button>
+									<input class="quantity" min="0" name="qty" value="0" type="number">
+									<button onclick="plus(this,'Chicken Wings')" class="plus"></button>
+								</div>
+							</td>
+							<td>9.00 $</td>
+						</tr>
+						<tr>
+							<td class="item">
+								<h3>French Fries</h3>
+							</td>
+							<td class="quantity">
+								<div class="number-input">
+									<button onclick="minus(this,'French Fries')"></button>
+									<input class="quantity" min="0" name="qty" value="0" type="number">
+									<button onclick="plus(this,'French Fries')" class="plus"></button>
+								</div>
+							</td>
+							<td>12.00 $</td>
+						</tr>
+						<tr>
+							<td class="item">
+								<h3>Fried Chicken</h3>
+							</td>
+							<td class="quantity">
+								<div class="number-input">
+									<button onclick="minus(this,'Fried Chicken')"></button>
+									<input class="quantity" min="0" name="qty" value="0" type="number">
+									<button onclick="plus(this,'Fried Chicken')" class="plus"></button>
+								</div>
+							</td>
+							<td>8.00 $</td>
+						</tr>
+						<tr>
+							<td class="item">
+								<h3>Beer</h3>
+							</td>
+							<td class="quantity">
+								<div class="number-input">
+									<button onclick="minus(this,'Beer')"></button>
+									<input class="quantity" min="0" name="qty" value="0" type="number">
+									<button onclick="plus(this,'Beer')" class="plus"></button>
+								</div>
+							</td>
+							<td>2.20 $</td>
+						</tr>
+						<tr>
+							<td class="item">
+								<h3>*Milkshake</h3>
+							<td class="quantity">
+								<div class="number-input">
+									<button onclick="minus(this,'Milkshake')"></button>
+									<input class="quantity" min="0" name="qty" value="0" type="number">
+									<button onclick="plus(this,'Milkshake')" class="plus"></button>
+								</div>
+							</td>
+							<td>1.80 $ - 20%</td>
+						</tr>
+
+						<tr>
+							<td class="item right" colspan="2">
+								<h3>Total:</h3>
+							</td>
+							<td>
+								<div class="total total-number"><span id="total" class="number">0</span></div>
+							</td>
+						</tr>
+						<tr>
+							<td class="item right" colspan="2">
+								<h3>+ VAT 21%:</h3>
+							</td>
+							<td>
+								<div class="total total-tax"><span id="tax" class="number">0</span></div>
+							</td>
+						</tr>
+						<tr>
+							<td class="item right" colspan="2">
+								<h3>TOTAL:</h3>
+							</td>
+							<td>
+								<div class="total total-final"><span id="tax" class="number">0</span></div>
+							</td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+			
+	</article>
+
+	<!-- <article class="article">
+		<div class="flex">
+			<div class="home_text">
+				<h2 class="mynumber">
+					143,000+
+				</h2>
+			customers in over 120 countries growing their businesses with HubSpot
+			</div>
+			<div class="home_second">
+				<div class="logo_wrapper">
+					<img class="mlogo" src="img/1200px-WWF_logo_svg (1).webp" alt="wwf">
+				</div>
+				<div class="logo_wrapper">
+					<img class="mlogo" src="img/trello-logo-blue (1).webp" alt="trello">
+				</div>
+				<div class="logo_wrapper">
+					<img class="mlogo" src="img/Vertical_Sabaeus_RGB.svg" alt="monkey">
+				</div>
+				<div class="logo_wrapper">
+					<img class="mlogo" src="img/Suzuki.webp" alt="suzuki">
+				</div>
+				<div class="logo_wrapper">
+					<img class="mlogo" src="img/soundcloud.webp" alt="sound">
+				</div>
+				<div class="logo_wrapper">
+					<img class="mlogo" src="img/Classpass-logo@2x.webp" alt="classp">
+				</div>
+				<div class="logo_wrapper">
+					<img class="mlogo" src="img/VMware_logo_gry_RGB_300dpi@2x.webp" alt="vware">
+				</div>
+			</div>
+		</div>
+
+	</article>
+
+</section>
+
+<section>
+	<div class="wrapper">
+		<p>Hello Worold</p>
+	</div>
+</section> -->
+
+<div class="space"></div>
+	
+
+
+<script src="js/code.js"></script>
+	
+</body>
+</html>
